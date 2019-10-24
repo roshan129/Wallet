@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".show_category_rpt">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_border_red">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/btn_report1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_border"
+        android:padding="5dp"
+        android:text="Show Data"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:layout_weight="0.5"
+                    android:width="10dp"
+                    android:background="@drawable/edit_text_border"
+                    android:gravity="center"
+                    android:text="ID"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:layout_weight="6"
+                    android:width="60dp"
+                    android:background="@drawable/edit_text_border"
+                    android:gravity="center"
+                    android:text="DATE"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:layout_weight="6"
+                    android:width="50dp"
+                    android:background="@drawable/edit_text_border"
+                    android:gravity="center"
+                    android:text="CATEGORY"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:layout_weight="0.5"
+                    android:width="60dp"
+                    android:background="@drawable/edit_text_border"
+                    android:gravity="center"
+                    android:text="AMT"
+                    android:textColor="#ffffff" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_list"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txt_total_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_border_dark"
+            android:padding="5dp"
+            android:text="Total :"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_total_amt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_total_text2"
+            android:background="@drawable/text_border_dark"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

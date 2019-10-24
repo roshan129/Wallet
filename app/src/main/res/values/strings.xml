@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Wallet</string>
+    <string name="add_record">Add Expense</string>
+    <string name="show_record">Show Reports</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="mydetails">
+        <b> Developer:</b> \n
+        <b> Name: Roshan Adke</b>\n
+        Email: roshanadke2015@gmail.com\n
+        <u>Contact: 7875022564</u>\n
+    </string>
+</resources>
+
